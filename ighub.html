@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="ighub.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1 id="h1">I am scorpion of the Mortal Kombat</h1>
+    <button id="b1">Click</button>
+
+    <h2 id="leave"> Leave my sight</h2>
+    <button id="b2">click</button><br><br>
+    <input type="text" id="myInput" placeholder="Write something....">
+    <p id="p3"></p>
+    <button id="inputsubmit" onclick="handleClick()">SUBMIT</button><br><br>
+
+
+    <input type="text" id="textinput">
+    <p id="p5"></p>
+    <button id="b5" onclick="buttonClick()">FINISH</button><br><br>
+
+<input type="text" id="lastinput">
+<p id="p6"></p>
+<button id="b6" onclick="fillIn()">blow</button>
+
+
+    <p id="p1"></p>
+    <p id="p2"></p>
+    <p id="p4"></p>
+    <button id="b3">click here</button>
+
+
+
+
+</body>
+
+
+
+
+<script>
+
+    function intro() {
+        function self(name, age, dob) {
+            return name + " " + age + " " + dob;
+        }
+        let all = self("John", "20", "2005");
+        document.getElementById('p2').innerHTML = all;
+    }
+    let together = document.getElementById("b3");
+    together.onclick = intro;
+
+
+
+
+
+    function school() {
+        function register(name, age, level, DOB) {
+            return name + "<br> " + age + "<br> " + level + "<br> " + DOB;
+        }
+        let result = register("Ada", 25, "200LV", "1998");
+        document.getElementById('p4').innerHTML = result;
+    } let button = document.getElementById('b2');
+    button.onclick = school;
+
+
+
+    
+        function handleClick() {
+        let theInput = document.getElementById("myInput");
+
+        if (theInput) {
+            let all = theInput.value;
+            document.getElementById('p3').innerHTML = "You entered: " + all;
+            document.getElementById('p3').style.color = "red";
+        } else {
+            alert("Input element not found!");
+        }
+    }
+
+    function buttonClick() {
+        let firstInput = document.getElementById("textinput");
+
+        if (firstInput) {
+            let inputResult = firstInput.value;
+            document.getElementById("p5").innerHTML = "You have entered: " + inputResult;
+        }else{
+            alert("there is nothing")
+        }
+    }
+
+
+
+
+
+    // function handleClick() {
+    //     let theInput = document.getElementById("myInput");
+    //     let all = theInput.value;
+    //     document.getElementById('p3').innerHTML = "you entered" + all;
+    // }
+
+    // document.getElementById('b1').addEventListener('click', function () {
+    //     document.getElementById('h1').innerHTML="I am, Johnny Cage";
+    //     document.getElementById('h1').style.color = "pink"
+    //     document.getElementById('h1').style.fontSize = "50px"
+    // });
+    // document.getElementById('p1').innerHTML = 'Get over here'
+    // document.write("I am a great son of my father")
+
+    // if (condition) {
+
+    // }
+
+    
+    // let query = prompt("Hello dear what's your name")
+
+    // function cool(params) {
+    //     let capital = query.slice(0,1);
+    // let capitalise = capital.toUpperCase();
+    // let all = capitalise + query.slice(1);
+    // let name = alert('You are Welcome Dear '+ all)
+
+    // let second = prompt('Please we would like to know how old your are for this Webpage is restricted for some Age range?')
+    // if (second < 18) {
+    //     alert('Sorry, your are to young for this website try another')
+    // }else{
+    //     alert('Okay your age range is permitted')
+    // }
+    // }
+    // cool();
+
+
+    // function greater() {
+    //     let pc = prompt('Hello enter two numbers you wish')
+    //     let firstNum = parseInt(pc.charAt(0))
+    //     let secondNum =parseInt(pc.substr(3,pc.length-3))
+    //     if (firstNum > secondNum){
+    //         alert("first letter is bigger than second one")
+    //     }else{
+    //         alert("first letter is smaller than second one")
+    //     }
+    // }
+    // greater();
+
+
+
+    // let x = 5;
+    // let y = 5;
+    // let z = 6;
+
+    // document.getElementById("demo").innerHTML =
+    //     (x == y) + "<br>" + (x == z);
+
+
+    // let m = 10;
+    // let n = 10;
+    // let o = 20;
+
+    // document.getElementById("kemo").innerHTML = (m == n).toString() + '<br>' + (m == o).toString();
+
+    // let a = 50;
+    // let b = 20;
+    // let c = 100;
+
+    // if (a == b) {
+    //     document.getElementById("remo").innerHTML = (a == b).toString();
+    // } else {
+    //     document.getElementById("semo").innerHTML = "false";
+    // }
+
+    // function click() {
+    //     function person(name, age) {
+    //         return name + " " + age
+    //     }
+    //     let all = person("Valentine", "25");
+    //     document.getElementById("zemo").innerHTML = all;
+    // }
+
+    // let myButton = document.getElementById("b1");
+    // b1.onclick = click;
+    function fillIn() {
+        let it = document.getElementById("lastinput");
+        if (it) {
+            let now = it.value
+            document.getElementById("p6").innerHTML = "You entered :" + now;
+        }else{
+            alert ('you didnt')
+        }
+    }
+
+</script>
+
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="">
+    <title>Assignment</title>
+</head>
+<body>
+  <div class="candy">
+<h1>Registration Form</h1>
+<h4>Please fill out this form with the required information</h4>
+<fieldset>
+<label for="">Enter Your First Name: </label>
+<input type="text" id="firstname"><br>
+<label for="">Enter Your Last Name: </label>
+<input type="text" id="lastname"><br>
+<label for="">Enter Your Email: </label>
+<input type="email" id="email"><br>
+<label for="">Creat a New Password: </label>
+<input type="password" id="password">
+</fieldset><br>
+<fieldset>
+<input id="personal account" type="radio" name="personal account-business account" value="personal account"><label for="">Personal Account</label><br>
+<input id="business account" type="radio" name="personal account-business account" value="business account"><label for="">Business Account</label><br>
+<input id="i accept the terms and conditions" type="checkbox"><label for="">I accept the <a href="https://wadupnaija.com">terms and conditions</a></label>
+</fieldset><br>
+<fieldset>
+<label>Upload a profile picture</label>
+<input type="file"><br>
+<label>Input your age (years)</label>
+<input type="number"><br>
+<label for="how did you hear about us">How did you hear about us? </label>
+<select name="how" id="how-select">
+  <option value="">(select one)</option>
+  <option value="online">Online</option>
+  <option value="from a friend">From a friend</option>
+  <option value="from an ad">From an ad</option>
+</select><br>
+<label>Provide a bio:</label><br>
+<textarea cols="30" rows="5" placeholder="I like coding on the beach..."></textarea>
+</fieldset><br>
+<button id="submit">Submit</button>
+<p id="pall"></p>
+</div>
+
+<script>
+  function all() {
+
+    function firstName() {
+    let first = document.getElementById('firstname');
+    if (first) {
+      let firstResult = first.value;
+    }else{
+      firstResult = first.value
+    }
+  }
+
+  function lastName() {
+    let last = document.getElementById('lastnam');
+    if (last) {
+      let lastResult = last.value;
+    }else{
+      lastResult = last.value
+    }
+  }
+  document.getElementById('submit').addEventListener('click', function () {
+    if (firstName) {
+      document.getElementById('pall').innerHTML = "Your first" + firstResult;
+    }
+  })
+  }
+  
+  
+</script>
+</body>

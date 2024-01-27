@@ -1,0 +1,34 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#header{
+    height: 50px;
+    width: 100%;
+    background-color: #d11a2a;
+    color: yellow;
+    font-size: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+    padding-top: 10px;
+}
+.body{
+    background-color: lightyellow;
+    height: 100vh;
+    width: 100%;
+    color: black;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: left;
+    padding: 20px 20px 0px 20px;
+
+}
+.p2{
+    font-size: 20px;
+    font-weight: 800;
+}
+.p3{
+    font-size:20px ;
+    font-weight: 800;
+    padding-top: 10px;
+}
