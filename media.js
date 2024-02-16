@@ -1,3 +1,20 @@
+
+// let me = prompt("Hello what is your name?");
+// let welcome = alert( + me);
+let formPage = prompt('Hello User What is your name');
+
+let first = formPage.slice(0,1);
+let  capitalise = first.toUpperCase();
+let rest = formPage.slice(1, formPage.length);
+let  sum = capitalise + rest;
+let welcome = alert('Welcome '  + (sum) + ' please fill in the following form'); 
+
+
+// let correct = me.slice(0,1);
+// let chibuike = correct.toUpperCase();
+// let valentine = welcome + me(1, formPage.length);
+// let chibuzor = chibuike + valentine;
+// let martins = alert("Welcome Mr " + chibuzor)
 let a = 20;
 a ++;
 document.getElementById('p1').innerHTML = a;
@@ -53,28 +70,28 @@ function handleButtonClick() {
 
 
 
-// function orderList() {
+function orderList() {
     
-    // if (drinkOption = drink) {
-    //     document.getElementById('p4').innerHTML = drinkOption;
-    // }else{
-    //     alert('pls make a choice');
-    // }
-// }
+    if (drinkOption = drink) {
+        document.getElementById('p4').innerHTML = drinkOption;
+    }else{
+        alert('pls make a choice');
+    }
+}
 
 
 
-// function handleButtonClick() {
-//     // Get the select element by its ID
-//     var selectElement = document.getElementById('mySelect');
+function handleButtonClick() {
+    // Get the select element by its ID
+    var selectElement = document.getElementById('mySelect');
 
-//     // Get the selected option
-//     var selectedOption = selectElement.options[selectElement.selectedIndex];
+    // Get the selected option
+    var selectedOption = selectElement.options[selectElement.selectedIndex];
 
-//     // Get the value of the selected option
-//     var selectedValue = selectedOption.value;
+    // Get the value of the selected option
+    var selectedValue = selectedOption.value;
 
-//     // Work with the selected value (e.g., display it)
-//     document.getElementById('output').innerHTML = 'Selected Option Value: ' + selectedValue;
-//   }
+    // Work with the selected value (e.g., display it)
+    document.getElementById('output').innerHTML = 'Selected Option Value: ' + selectedValue;
+  }
 
